@@ -21,4 +21,10 @@ public class DepartmentService {
 			dao.update(department);
 		}
 	}
+	
+	public void remove(Department department) {
+		if(department.getId() != null) {
+			dao.deleteById(department.getId());
+		}
+	}
 }
